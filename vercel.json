@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "name": "tax-planning-pro-api",
+  "builds": [
+    {
+      "src": "src/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/src/server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/src/server.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "USE_SUPABASE": "true",
+    "SUPABASE_URL": "https://ryeiwlgmsvpynqgksogn.supabase.co",
+    "SUPABASE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ5ZWl3bGdtc3ZweW5xZ2tzb2duIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc2NzkwOTEsImV4cCI6MjA3MzI1NTA5MX0.pwSdeustJgSEc9zwRTQh8mBuMjh0PQELh-E8FPe1fOQ",
+    "JWT_SECRET": "tax-planning-pro-jwt-secret-2024-production",
+    "JWT_REFRESH_SECRET": "tax-planning-pro-refresh-secret-2024-production",
+    "JWT_EXPIRES_IN": "15m",
+    "JWT_REFRESH_EXPIRES_IN": "7d",
+    "FRONTEND_URL": "https://tax-on-a-me.com",
+    "ALLOWED_ORIGINS": "https://tax-on-a-me.com,https://www.tax-on-a-me.com,https://tax-planning-pro-frontend.vercel.app"
+  },
+  "functions": {
+    "src/server.js": {
+      "maxDuration": 30
+    }
+  }
+}
+
