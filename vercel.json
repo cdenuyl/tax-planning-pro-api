@@ -24,10 +24,5 @@
     "JWT_REFRESH_EXPIRES_IN": "7d",
     "FRONTEND_URL": "https://tax-on-a-me.com",
     "ALLOWED_ORIGINS": "https://tax-on-a-me.com,https://www.tax-on-a-me.com,https://tax-planning-pro-frontend.vercel.app"
-  },
-  "functions": {
-    "src/server.js": {
-      "maxDuration": 30
-    }
   }
 }
