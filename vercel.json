@@ -9,10 +9,6 @@
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/src/server.js"
-    },
-    {
       "src": "/(.*)",
       "dest": "/src/server.js"
     }
@@ -20,8 +16,8 @@
   "env": {
     "NODE_ENV": "production",
     "USE_SUPABASE": "true",
-    "SUPABASE_URL": "https://ryeiwlgmsvpynqgksogn.supabase.co",
-    "SUPABASE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ5ZWl3bGdtc3ZweW5xZ2tzb2duIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc2NzkwOTEsImV4cCI6MjA3MzI1NTA5MX0.pwSdeustJgSEc9zwRTQh8mBuMjh0PQELh-E8FPe1fOQ",
+    "DATABASE_URL": "https://ryeiwlgmsvpynqgksogn.supabase.co",
+    "SUPABASE_SERVICE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ5ZWl3bGdtc3ZweW5xZ2tzb2duIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc2NzkwOTEsImV4cCI6MjA3MzI1NTA5MX0.pwSdeustJgSEc9zwRTQh8mBuMjh0PQELh-E8FPe1fOQ",
     "JWT_SECRET": "tax-planning-pro-jwt-secret-2024-production",
     "JWT_REFRESH_SECRET": "tax-planning-pro-refresh-secret-2024-production",
     "JWT_EXPIRES_IN": "15m",
@@ -35,4 +31,3 @@
     }
   }
 }
-
